@@ -1,0 +1,31 @@
+.fa-magnifying-glass,
+.fa-location-dot {
+  border-radius: 20px;
+  color: black;
+}
+
+.container {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.country {
+  margin: 0;
+}
+
+.emoji-weather-time {
+  font-size: 24px;
+  margin: 0;
+}
+
+.temperature-emoji {
+  font-size: 52px;
+}
+
+.weather-details {
+  line-height: 1.7;
+}
+
+.units {
+  font-size: 20px;
+  font-weight: 200;
+}
