@@ -27,6 +27,10 @@
   line-height: 1.7;
 }
 
+.week-day {
+  margin: 0;
+}
+
 .units {
   font-size: 20px;
   font-weight: 200;
