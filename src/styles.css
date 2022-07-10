@@ -16,7 +16,7 @@
   font-size: 24px;
   margin: 0;
   padding: 0;
-  display: block;
+  text-align: center;
 }
 
 .temperature-emoji {
