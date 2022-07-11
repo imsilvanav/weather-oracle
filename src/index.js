@@ -93,7 +93,7 @@ function displayFahrenheitTemperature(event) {
   alert("Link clicked");
 }
 
-let fahrenheitLink = document.querySelector("fahrenheit-link");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 // function convertToFahrenheit(event) {
