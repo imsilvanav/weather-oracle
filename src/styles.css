@@ -19,10 +19,6 @@
   text-align: center;
 }
 
-.temperature-emoji {
-  font-size: 52px;
-}
-
 .weather-details {
   line-height: 1.7;
 }
@@ -35,4 +31,8 @@
 .units {
   font-size: 20px;
   font-weight: 200;
+}
+
+/* .temperature-emoji {
+//  font-size: 52px;
 }
