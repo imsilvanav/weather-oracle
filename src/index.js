@@ -88,6 +88,14 @@ searchCity("Porto");
 
 // Fahrenheit / Celsius
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  alert("Link clicked");
+}
+
+let fahrenheitLink = document.querySelector("fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
 // function convertToFahrenheit(event) {
 //  event.preventDefault();
 //  let temperatureElement = document.querySelector("#temperature");
