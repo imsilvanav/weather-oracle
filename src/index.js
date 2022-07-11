@@ -32,6 +32,12 @@ function displayWeatherCondition(response) {
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
 
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+
   // if (searchInput.value) {
   //  location.innerHTML = `${searchInput.value}`;
   // } else {
