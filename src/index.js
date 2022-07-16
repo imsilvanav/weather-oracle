@@ -21,7 +21,24 @@ date.innerHTML = `${day} ${hours}:${minutes}`;
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  forecastElement.innerHTML = "Forecast";
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+    <div class="col-2">
+      <div class="card">
+        <div class="card-body">
+            <h6 class="card-title week-day">Monday</h6>
+             <br />
+             <p class="emoji-weather-time">🌜</p>
+             <br />
+             <p class="card-text">20ºC | 13ºC</p>
+        </div>
+      </div>
+    </div>
+  `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayWeatherCondition(response) {
