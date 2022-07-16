@@ -18,7 +18,8 @@ let minutes = (now.getMinutes() < 10 ? "0" : "") + now.getMinutes();
 
 date.innerHTML = `${day} ${hours}:${minutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -41,7 +42,7 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-function displayForecast(coordinates) {
+function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = `fcb6db32349eaabbe25a151e1670e953`;
   let units = `metric`;
