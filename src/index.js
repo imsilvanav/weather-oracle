@@ -43,7 +43,7 @@ function displayForecast(response) {
             <h6 class="card-title week-day">${formatDay(forecastDay.dt)}</h6>
              <br />
              <img
-                src="http://openweathermap.org/img/wn/1${
+                src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
                 }@2x.png"
                 alt= ""
