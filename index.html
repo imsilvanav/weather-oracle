@@ -57,7 +57,11 @@
         <div class="card-body">
           <div class="row align-items-start">
             <div class="col-4">
-              <img src="/IconSet/" alt="Clear" id="weather-icon" />
+              <img
+                src="IconSet/${forecastDay.weather[0].icon}.png"
+                alt="${forecastDay.weather[0].description}"
+                id="weather-icon"
+              />
               <h1 class="temperature">
                 <span id="temperature"></span>
                 <span class="units">

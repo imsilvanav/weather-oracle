@@ -90,7 +90,7 @@ function displayWeatherCondition(response) {
   let iconElement = document.querySelector("#weather-icon");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `IconSet/${response.data.weather[0].icon}.png`
   );
 
   getForecast(response.data.coord);
