@@ -45,6 +45,7 @@ function displayForecast(response) {
              <img
                 src="IconSet/${forecastDay.weather[0].icon}.png"
                 alt="${forecastDay.weather[0].description}"
+                class="forecast-icon"
               />
              <span class="card-text"> ${Math.round(
                forecastDay.temp.max
