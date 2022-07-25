@@ -2,21 +2,28 @@ let now = new Date();
 
 let date = document.querySelector(".date");
 
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday",
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+let months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
-let day = days[now.getDay()];
+let month = months[now.getMonth()];
+let weekday = days[now.getDay()];
+let day = now.getDate();
 let hours = now.getHours();
 let minutes = (now.getMinutes() < 10 ? "0" : "") + now.getMinutes();
 
-date.innerHTML = `${day} ${hours}:${minutes}`;
+date.innerHTML = `${weekday}, ${day} ${month}  |  ${hours}:${minutes}`;
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
