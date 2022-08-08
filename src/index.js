@@ -45,7 +45,7 @@ function displayForecast(response) {
         forecastHTML +
         `
     <div class="col-2">
-      <div class="card">
+      <div class="card" id="day-box">
         <div class="card-body">
             <h6 class="card-title week-day">${formatDay(forecastDay.dt)}</h6>
              <br />
@@ -56,7 +56,7 @@ function displayForecast(response) {
               />
              <span class="card-text"> ${Math.round(
                forecastDay.temp.max
-             )}º </span> | <span class="card-text"> ${Math.round(
+             )}º </span> | <span class="card-text" id="temp-min"> ${Math.round(
           forecastDay.temp.min
         )}º </span>
         </div>
@@ -84,7 +84,9 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  // document.querySelector("#precipitation").innerHTML = response.data;
+  document.querySelector("#feels-like").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed

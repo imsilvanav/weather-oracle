@@ -94,9 +94,12 @@ h3 {
   padding-bottom: 0;
 }
 
+.forecast {
+  text-align: center;
+}
 
 .forecast-icon {
-  width: 100px;
+  width: 90px;
   margin-top: 0;
 }
 
@@ -106,6 +109,24 @@ h3 {
 
 .celsius {
   font-size: 20px;
+  position: relative;
+  top: -40px;
+}
+
+.temperature {
+  margin-top: 30px;
+}
+
+.date {
+  margin-top: 10px;
+}
+
+#day-box {
+  background-color: white;
+}
+
+#temp-min {
+  font-weight: 200;
 }
 
 /* .temperature-emoji {
